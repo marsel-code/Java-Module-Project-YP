@@ -3,12 +3,19 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("На какое количество человек Вы планируете разделить счёт?");
-        int amounthPersons = scanner.nextInt();
-        if (amounthPersons => 1){
-            Calculator.calculator();
-        } else {
+        if (scanner.hasNextInt()) {
+            int amountPersons = scanner.nextInt();
+            if (amountPersons > 1) {
+                System.out.println("больше 1");
+            } else if (amountPersons <= 1) {
                 System.out.println("Некорректное значение! Пожалуйста, повторите ввод.");
-                amounthPersons = scanner.nextInt();
             }
+
+
+        }
     }
 }
+
+//amounthPersons <= 1
+//  Calculator.calculator();
+//  System.out.println("Некорректное значение! Пожалуйста, повторите ввод.");
