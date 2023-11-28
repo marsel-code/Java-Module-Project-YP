@@ -1,21 +1,26 @@
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("На какое количество человек Вы планируете разделить счёт?");
-        if (scanner.hasNextInt()) {
-            int amountPersons = scanner.nextInt();
-            if (amountPersons > 1) {
-                System.out.println("больше 1");
-            } else if (amountPersons <= 1) {
-                System.out.println("Некорректное значение! Пожалуйста, повторите ввод.");
-            }
-
-
-        }
+        System.out.println("Введите количество человек:");
+        System.out.println("итого " + amountPersons() + " человек");
     }
-}
 
-//amounthPersons <= 1
-//  Calculator.calculator();
-//  System.out.println("Некорректное значение! Пожалуйста, повторите ввод.");
+    public static int amountPersons() {
+        Scanner scanner = new Scanner(System.in);
+        while (true) {
+
+            if (scanner.hasNextInt()) {
+                int persons = scanner.nextInt();
+                if (persons > 1) {
+                    return persons;
+                } else if (persons <= 1) {
+                        System.out.println("меньше 1");
+                    }
+                } else {
+                System.out.println("не число");
+                scanner.next();}
+                }
+
+            }
+        }
+
