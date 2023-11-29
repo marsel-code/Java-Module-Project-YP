@@ -9,9 +9,9 @@ public class Calculator {
                 int persons = scanner.nextInt();
                 if (persons > 1) {
                     return persons;
-                } else if (persons <= 1) {
+                } //else if (persons <= 1) {
                     System.out.println("Введите число больше 1");
-                }
+                //}
             } else {
                 System.out.println("Введите число");
                 scanner.next();
