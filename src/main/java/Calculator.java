@@ -41,7 +41,7 @@ public class Calculator {
                 Double price = scanner.nextDouble();
                 return price;
             } else {
-                System.out.println("Введите текст");
+                System.out.println("Введите число");
                 scanner.next();
             }
         }
