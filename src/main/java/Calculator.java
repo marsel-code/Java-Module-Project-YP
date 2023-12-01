@@ -16,7 +16,7 @@ public class Calculator {
                     break;
                 }
             } else {
-                System.out.println("Введите число");
+                System.out.println("Введите число ");
                 scanner.next();
             }
         }
